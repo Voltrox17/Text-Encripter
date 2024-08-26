@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --color-1: #212227;
+    --color-2: #ffffff;
+    --color-3: #587B7F;
+    --color-4: #000000;
+    --color-5: #BBDBB4;
+
+    --font-canada: "Radio Canada Big", system-ui;
+    --font-playfair: "Playfair Display", system-ui;
+    --font-baba: "Bebas Neue", sans-serif;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: var(--color-1);
+    color: var(--color-5);
+    justify-content: space-around;
+    padding-top: 0.7rem;
+}
+
+
+.text{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 85dvh;
+    align-items: center;
+    padding: 5rem;
+    margin-top: 3.125rem;
+}
+
+
+.header{
+    font-family: var(--font-baba);
+    color: var(--color-2);
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+
+.header_logo{
+    width: 8.875rem;
+    display: flex;
+    height: 9.188rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button1{
+    background-color: var(--color-3);
+    font-family: var(--font-canada);
+    font-size: 16px;
+    color: var(--color-2);
+    border-radius: 24px;
+    border: none;
+    width: 20.5rem;
+    height: 4.188rem;
+    text-align: center;
+}
+
+.button2{
+    background-color: #D8DFE8;
+    font-family: var(--font-canada);
+    font-size: 16px;
+    color: var(--color-3);
+    border-radius: 24px;
+    border: 3px solid var(--color-3);
+    width: 20.5rem;
+    height: 4.188rem;
+    text-align: center;
+}
+
+.button3{
+    background-color: #D8DFE8;
+    font-family: var(--font-canada);
+    font-size: 16px;
+    color: var(--color-1);
+    border-radius: 24px;
+    border: 3px solid var(--color-1);
+    width: 20.5rem;
+    height: 4.188rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.textbox{
+    font-family: var(--font-playfair);
+    font-size: 1.25rem;
+    padding: 3.375rem;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 16px;
+    border: #D8DFE8;
+    width: 37.5rem;
+    resize: none;
+    overflow-x: break-word;
+    line-height: normal;
+    text-align: center
+}
+
+
+::placeholder{  
+    color: #ffffff;
+}
+.alert_text{
+    display: flex;
+    font-family: var(--font-playfair);
+    color: #495057;
+    gap: 0.5rem;
+}
+
+.historial{
+    font-family: var(--font-canada);
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    background: var(--color-3);
+    border-radius: 32px;
+    color: #000000;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5.25rem;
+    padding: 2rem;
+    width: 25rem;
+    height: 95vh;
+}
+
+.parrafo{
+    font-family: var(--font-canada);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-4);
+    gap: 1rem;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.loader {
+    width: 45px;
+    aspect-ratio: 1;
+    --c: no-repeat linear-gradient(var(--color-1) 0 0);
+    background: 
+      var(--c) 0%   50%,
+      var(--c) 50%  50%,
+      var(--c) 100% 50%;
+    background-size: 20% 100%;
+    animation: l1 1s infinite linear;
+  }
+  @keyframes l1 {
+    0%  {background-size: 20% 100%,20% 100%,20% 100%}
+    33% {background-size: 20% 10% ,20% 100%,20% 100%}
+    50% {background-size: 20% 100%,20% 10% ,20% 100%}
+    66% {background-size: 20% 100%,20% 100%,20% 10% }
+    100%{background-size: 20% 100%,20% 100%,20% 100%}
+  }
+

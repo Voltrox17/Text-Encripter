@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-co">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptex: Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="header_logo" src="./img/Logo.svg" alt="Logo" />
+    <p>Encriptex</p>
+    </header>
+    <main>
+      <form class="text">
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Introduce el texto aqui"
+          class="textbox"
+        ></textarea>
+        <div>
+          <div class="alert_text">
+            <img src="./img/alert.svg" alt="Alert Icon" class="image"/><span
+              >Solo letras minúsculas y sin acentos</span
+            >
+          </div>
+        </div>
+        <input type="submit" value="Encriptar" class="button1" />
+        <input type="submit" value="Desencriptar" class="button1 button2" />
+      </div>
+    </form>
+    </main>
+    <aside class="historial">
+      <img src="./img/Muñeco.svg" alt="Figura" class="dibujo"/>
+      <div class="loader hidden"></div>
+      <div>
+        <h3 class="headertextbox">Ningún mensaje fue encontrado</h3>
+        <p class="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
+      <button class="button1 button2 button3 hidden">Copiar</button>
+    </aside>
+    <script src="app.js"></script>
+  </body>
+</html>
